@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ec4462c-54b9-4256-81de-cc883b6b06f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.2.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/mj/project/eatgo/EatgoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/classes/java/main/mj/project/eatgo/EatgoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/classes/java/main/mj/project/eatgo/domain/Restaurant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/classes/java/main/mj/project/eatgo/interfaces/WelcomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/classes/java/test/mj/project/eatgo/EatgoApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/classes/java/test/mj/project/eatgo/domain/RestaurantTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/MenuItemRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/RestaurantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/RestaurantRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/interfaces/RestaurantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eatgo-api/src/test/java/mj/project/eatgo/interfaces/RestaurantControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eatgo-api/src/test/java/mj/project/eatgo/domain/RestaurantTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eatgo-api/src/test/java/mj/project/eatgo/domain/RestaurantTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZA7AjfQGgEpLDuyibwffpXFMgp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eatgo-api/src/main/java/mj/project/eatgo/domain" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="mj.project.eatgo.domain" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="mj.project.eatgo.application" />
+      <recent name="mj.project.eatgo.interfaces" />
+      <recent name="mj.project.eatgo.domain" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82109\Desktop\eatgo\eatgo-api" />
+      <recent name="C:\Users\82109\Desktop\eatgo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\82109\Desktop\eatgo\eatgo-api\src\main\java\mj\project\eatgo\domain" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mj.project.eatgo.application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RestaurantControllerTest.detail">
+    <configuration name="EatgoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mj.project.eatgo.EatgoApplication" />
+      <module name="eatgo.eatgo-api.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mj.project.eatgo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eatgo.eatgo-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mj.project.eatgo.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mj.project.eatgo.interfaces" />
+      <option name="MAIN_CLASS_NAME" value="mj.project.eatgo.interfaces.RestaurantControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantControllerTest.detail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eatgo.eatgo-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mj.project.eatgo.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mj.project.eatgo.interfaces" />
+      <option name="MAIN_CLASS_NAME" value="mj.project.eatgo.interfaces.RestaurantControllerTest" />
+      <option name="METHOD_NAME" value="detail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantControllerTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eatgo.eatgo-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mj.project.eatgo.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mj.project.eatgo.interfaces" />
+      <option name="MAIN_CLASS_NAME" value="mj.project.eatgo.interfaces.RestaurantControllerTest" />
+      <option name="METHOD_NAME" value="list" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="eatgo.eatgo-api.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mj.project.eatgo.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mj.project.eatgo.application" />
+      <option name="MAIN_CLASS_NAME" value="mj.project.eatgo.application.RestaurantServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RestaurantControllerTest.detail" />
+        <item itemvalue="JUnit.RestaurantControllerTest.list" />
+        <item itemvalue="JUnit.RestaurantServiceTest" />
+        <item itemvalue="JUnit.RestaurantControllerTest" />
+        <item itemvalue="Application.EatgoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ec4462c-54b9-4256-81de-cc883b6b06f5" name="Default Changelist" comment="" />
+      <created>1584269902914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584269902914</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="672" y="176" key="#EatgoApplication" timestamp="1584274841760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="176" key="#EatgoApplication/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584274841760" />
+    <state x="552" y="178" key="#Notifications" timestamp="1584273010563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584273010563" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585479601262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585479601262" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585481762598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585481762598" />
+    <state x="701" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585485911061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="322" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585485911061" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585841793763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585841793763" />
+    <state x="640" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584271123009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584271123009" />
+    <state x="606" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585840407793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="606" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585840407793" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585840429482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585840429482" />
+    <state x="700" y="45" key="#org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinOverridingDialog" timestamp="1585842245992">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="45" key="#org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinOverridingDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842245992" />
+    <state x="628" y="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585841634133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585841634133" />
+    <state x="536" y="113" key="CommitChangelistDialog2" timestamp="1585841879417">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="113" key="CommitChangelistDialog2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585841879417" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1584272502307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584272502307" />
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom" timestamp="1585842818503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842818503" />
+    <state width="1877" height="339" key="GridCell.Tab.0.center" timestamp="1585842818503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="339" key="GridCell.Tab.0.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842818503" />
+    <state width="1877" height="339" key="GridCell.Tab.0.left" timestamp="1585842818503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="339" key="GridCell.Tab.0.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842818503" />
+    <state width="1877" height="339" key="GridCell.Tab.0.right" timestamp="1585842818503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="339" key="GridCell.Tab.0.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842818503" />
+    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1584272898795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584272898795" />
+    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1584272898795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584272898795" />
+    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1584272898795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584272898795" />
+    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1584272898795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="348" key="GridCell.Tab.1.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584272898795" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1584277231664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584277231664" />
+    <state x="612" y="375" key="com.intellij.ide.util.TipDialog" timestamp="1585842155795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="612" y="375" key="com.intellij.ide.util.TipDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585842155795" />
+    <state x="619" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585836316608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="619" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585836316608" />
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585487098282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1585487098282" />
+    <state x="702" y="147" key="refactoring.ChangeSignatureDialog" timestamp="1584278916711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="147" key="refactoring.ChangeSignatureDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584278916711" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584270345551">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1584270345551" />
+  </component>
+</project>
