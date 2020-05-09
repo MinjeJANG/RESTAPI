@@ -1,18 +1,19 @@
 package mj.project.eatgo.interfaces;
 
+import mj.project.eatgo.domain.MenuItem;
+import mj.project.eatgo.domain.Restaurant;
+import mj.project.eatgo.domain.RestaurantNotFoundException;
+import mj.project.eatgo.domain.Review;
 import mj.project.eatgo.application.RestaurantService;
-import mj.project.eatgo.domain.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

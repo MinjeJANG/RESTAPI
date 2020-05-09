@@ -2,7 +2,6 @@ package mj.project.eatgo.interfaces;
 
 import mj.project.eatgo.application.ReviewSerivce;
 import mj.project.eatgo.domain.Review;
-import org.h2.command.ddl.CreateView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

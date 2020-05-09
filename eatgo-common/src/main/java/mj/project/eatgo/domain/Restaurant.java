@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotEmpty;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 

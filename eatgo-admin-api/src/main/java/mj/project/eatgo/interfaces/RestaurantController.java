@@ -1,10 +1,7 @@
 package mj.project.eatgo.interfaces;
 
 import mj.project.eatgo.application.RestaurantService;
-import mj.project.eatgo.domain.MenuItem;
-import mj.project.eatgo.domain.MenuRepository;
 import mj.project.eatgo.domain.Restaurant;
-import mj.project.eatgo.domain.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
