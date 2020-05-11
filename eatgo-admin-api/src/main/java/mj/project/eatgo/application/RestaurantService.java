@@ -10,19 +10,12 @@ import java.util.List;
 @Service
 public class RestaurantService {
 
-    @Autowired
+
     private RestaurantRepository restaurantRepository;
 
     @Autowired
-    private MenuRepository menuRepository;
-
-    @Autowired
-    private ReviewRepository reviewRepository;
-
-    public RestaurantService(RestaurantRepository restaurantRepository, MenuRepository menuRepository, ReviewRepository reviewRepository) {
+    public RestaurantService(RestaurantRepository restaurantRepository) {
         this.restaurantRepository = restaurantRepository;
-        this.menuRepository = menuRepository;
-        this.reviewRepository = reviewRepository;
     }
 
     public List<Restaurant> getRestaurants() {
@@ -36,12 +29,6 @@ public class RestaurantService {
         Restaurant restaurant = restaurantRepository.findById(id)
                 .orElseThrow(() -> new RestaurantNotFoundException(id));
 
-        List<MenuItem> menuItems = menuRepository.findAllByRestaurantId(id);
-        restaurant.setMenuItems(menuItems);
-
-        List<Review> reviews = reviewRepository.findAllByRestaurantId(id);
-
-        restaurant.setReviews(reviews);
         return restaurant;
     }
 
