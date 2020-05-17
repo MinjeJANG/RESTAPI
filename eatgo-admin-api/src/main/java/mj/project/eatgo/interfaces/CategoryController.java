@@ -1,7 +1,7 @@
 package mj.project.eatgo.interfaces;
 
-import mj.project.eatgo.application.RegionService;
-import mj.project.eatgo.domain.Region;
+import mj.project.eatgo.application.CategoryService;
+import mj.project.eatgo.domain.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,28 +11,27 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class RegionController {
+public class CategoryController {
 
     @Autowired
-    private RegionService regionService;
+    private CategoryService categoryService;
 
-    @GetMapping("/regions")
-    public List<Region> list() { 
-        List<Region> regions = regionService.getRegions();
+    @GetMapping("/categories")
+    public List<Category> list() {
+        List<Category> categories = categoryService.getCategories();
 
-        return regions;
+        return categories;
     }
 
-    @PostMapping("/regions")
-    public ResponseEntity<?> create(@RequestBody Region resource) throws URISyntaxException {
+    @PostMapping("/categories")
+    public ResponseEntity<?> create(@RequestBody Category resource) throws URISyntaxException {
 
         String name = resource.getName();
-        Region region = regionService.addRegion(name);
-        String url = "/regions/" + region.getId();
+        Category category = categoryService.addCategory(name);
+        String url = "/regions/" + category.getId();
         return ResponseEntity.created(new URI(url)).body("{}");
     }
 }

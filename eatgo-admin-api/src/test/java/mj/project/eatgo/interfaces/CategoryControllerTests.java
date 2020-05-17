@@ -1,6 +1,7 @@
 package mj.project.eatgo.interfaces;
 
-import mj.project.eatgo.application.RegionService;
+import mj.project.eatgo.application.CategoryService;
+import mj.project.eatgo.domain.Category;
 import mj.project.eatgo.domain.Region;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.core.StringContains.containsString;
-import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -25,40 +24,40 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(RegionController.class)
-public class RegionControllerTest {
+@WebMvcTest(CategoryController.class)
+public class CategoryControllerTests {
 
     @Autowired
     private MockMvc mvc;
 
     @MockBean
-    private RegionService regionService;
+    private CategoryService categoryService;
 
     @Test
     public void list() throws Exception {
 
-        List<Region> regions = new ArrayList<>();
-        regions.add(Region.builder().name("Seoul").build());
+        List<Category> categories = new ArrayList<>();
+        categories.add(Category.builder().name("Korean Food").build());
 
-        given(regionService.getRegions()).willReturn(regions);
-        mvc.perform(get("/regions"))
+        given(categoryService.getCategories()).willReturn(categories);
+        mvc.perform(get("/categories"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Seoul")));
+                .andExpect(content().string(containsString("Korean Food")));
     }
 
     @Test
     public void create() throws Exception {
 
-        Region region = Region.builder().name("Seoul").build();
-        given(regionService.addRegion("Seoul")).willReturn(region);
+        Category category = Category.builder().name("Korean Food").build();
+        given(categoryService.addCategory("Korean Food")).willReturn(category);
 
-        mvc.perform(post("/regions")
-            .contentType(MediaType.APPLICATION_JSON)
-            .content("{\"name\":\"Seoul\"}"))
-            .andExpect(status().isCreated())
-            .andExpect(content().string("{}"));
+        mvc.perform(post("/categories")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"name\":\"Korean Food\"}"))
+                .andExpect(status().isCreated())
+                .andExpect(content().string("{}"));
 
-        verify(regionService).addRegion("Seoul");
+        verify(categoryService).addCategory("Korean Food");
     }
 
 }
