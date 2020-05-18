@@ -1,6 +1,5 @@
 package mj.project.eatgo.application;
 
-import mj.project.eatgo.application.RestaurantService;
 import mj.project.eatgo.domain.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -74,7 +73,7 @@ public class RestaurantServiceTest {
                 .build();
 
         restauarants.add(restaurant);
-        given(restaurantRepository.findAll()).willReturn(restauarants);
+        given(restaurantRepository.findAllByAddressContaining("Seoul")).willReturn(restauarants);
 
         given(restaurantRepository.findById(1004L)).willReturn(Optional.of(restaurant));
 
@@ -103,7 +102,8 @@ public class RestaurantServiceTest {
 
     @Test
     public void getRestaurants() {
-        List<Restaurant> restaurants = restaurantService.getRestaurants();
+        String region = "Seoul";
+        List<Restaurant> restaurants = restaurantService.getRestaurants(region);
 
         Restaurant restaurant = restaurants.get(0);
 
