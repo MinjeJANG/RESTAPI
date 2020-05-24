@@ -34,6 +34,21 @@ public class UserService {
     }
 
     public User updateUser(Long id, String email, String name, Long level) {
-        return null;
+
+        //
+        User user = userRepository.findById(id).orElse(null);
+
+        user.setName(name);
+        user.setEmail(email);
+        user.setLevel(level);
+
+        return user;
+    }
+
+    public User deactiveUser(long id) {
+
+        User user = userRepository.findById(id).orElse(null);
+
+        return user;
     }
 }

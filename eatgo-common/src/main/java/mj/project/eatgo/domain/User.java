@@ -1,9 +1,6 @@
 package mj.project.eatgo.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Entity;
@@ -23,14 +20,23 @@ public class User {
     @GeneratedValue
     private Long id;
 
+    @Setter
     @NotEmpty
     private String email;
 
+    @Setter
     @NotEmpty
     private String name;
 
+    @Setter
     @NotNull
     private Long level;
 
+    public boolean isAdmin() {
+        return level >= 100;
+    }
 
+    public Boolean isActive() {
+        return true;
+    }
 }

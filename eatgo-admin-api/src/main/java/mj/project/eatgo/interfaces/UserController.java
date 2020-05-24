@@ -25,7 +25,7 @@ public class UserController {
 
     @PostMapping("/users")
     public ResponseEntity<?> create(
-            @RequestBody User resource
+    @RequestBody User resource
     ) throws URISyntaxException {
 
         String email = resource.getEmail();
@@ -37,8 +37,25 @@ public class UserController {
         return ResponseEntity.created(new URI(url)).body("{}");
     }
 
-    @PatchMapping("/users/{userId}")
-    public String update() {
+    @PatchMapping("/users/{id}")
+    public String update(
+            @PathVariable("id") Long id,
+            @RequestBody User resource
+    ) {
+
+        String email = resource.getEmail();
+        String name = resource.getName();
+        Long level = resource.getLevel();
+
+        userService.updateUser(id, email, name, level);
+
+        return "{}";
+    }
+
+    @DeleteMapping("/users/{id}")
+    public String delete(@PathVariable("id") Long id) {
+
+        userService.deactiveUser(id);
         return "{}";
     }
 

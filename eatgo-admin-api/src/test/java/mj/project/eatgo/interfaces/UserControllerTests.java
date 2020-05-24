@@ -78,9 +78,8 @@ public class UserControllerTests {
     public void update() throws Exception {
 
         mvc.perform(patch("/users/1004")
-
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"admin@example.com\", \"name\":\"Administrator\", {\"level\" : \"100\"} }"))
+                .content("{\"email\":\"admin@example.com\", \"name\":\"Administrator\", \"level\":100}"))
                 .andExpect(status().isOk());
 
         Long id = 1004L;
@@ -88,14 +87,15 @@ public class UserControllerTests {
         String name = "Administrator";
         Long level = 100L;
 
-        User user = User.builder()
-                .id(id)
-                .email(email)
-                .name(name)
-                .level(level)
-                .build();
+        verify(userService).updateUser(eq(id), eq(email), eq(name), eq(level));
+    }
 
-        verify(userService.updateUser(eq(id), eq(email), eq(name), eq(level)));
+    @Test
+    public void deactivate() throws Exception {
+        mvc.perform(delete("/users/1004"))
+                .andExpect(status().isOk());
+
+        verify(userService).deactiveUser(1004L);
     }
 
 
