@@ -42,7 +42,6 @@ public class UserController {
             @PathVariable("id") Long id,
             @RequestBody User resource
     ) {
-
         String email = resource.getEmail();
         String name = resource.getName();
         Long level = resource.getLevel();
