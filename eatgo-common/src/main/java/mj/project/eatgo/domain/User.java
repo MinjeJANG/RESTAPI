@@ -1,7 +1,5 @@
 package mj.project.eatgo.domain;
-
 import lombok.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,15 +30,28 @@ public class User {
     @NotNull
     private Long level;
 
+    private String password;
+
+    private Long restaurantId;
+
     public boolean isAdmin() {
         return level >= 100;
     }
 
-    public Boolean isActive() {
+    public boolean isActive() {
         return level > 0;
     }
 
     public void deactivate() {
         level = 0L;
+    }
+
+    public void setRestaurantId(Long restaurantId) {
+        this.level = 50L;
+        this.restaurantId = restaurantId;
+    }
+
+    public boolean isRestaurantOwner() {
+        return level == 50L;
     }
 }

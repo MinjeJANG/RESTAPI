@@ -5,6 +5,7 @@ import mj.project.eatgo.domain.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -34,6 +35,7 @@ public class UserService {
         return userRepository.save(user);
     }
 
+    @Transactional
     public User updateUser(Long id, String email, String name, Long level) {
         // TODO: restaurantService의 예외 처리 참고.
         User user = userRepository.findById(id).orElse(null);

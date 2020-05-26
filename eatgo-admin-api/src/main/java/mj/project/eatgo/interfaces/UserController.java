@@ -46,7 +46,7 @@ public class UserController {
         String name = resource.getName();
         Long level = resource.getLevel();
 
-        userService.updateUser(id, email, name, level);
+        List<User> user = userService.getUsers();
 
         return "{}";
     }
