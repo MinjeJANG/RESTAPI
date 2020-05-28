@@ -35,7 +35,6 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    @Transactional
     public User updateUser(Long id, String email, String name, Long level) {
         // TODO: restaurantService의 예외 처리 참고.
         User user = userRepository.findById(id).orElse(null);
@@ -43,6 +42,8 @@ public class UserService {
         user.setEmail(email);
         user.setName(name);
         user.setLevel(level);
+
+        userRepository.save(user);
 
         return user;
     }
