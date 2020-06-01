@@ -44,16 +44,16 @@ public class UserControllerTests {
                 .name("Tester")
                 .password("test").build();
 
-        given(userService.registerUser("tester@example.com", "Tester", "test"))
+        given(userService.registerUser("tester@example.com", "Mj", "test"))
                 .willReturn(mockUser);
 
         mvc.perform(post("/users")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"tester@example.com\", \"name\":\"Tester\",\"password\":\"test\"}"))
+                .content("{\"email\":\"tester@example.com\", \"name\":\"Mj\",\"password\":\"test\"}"))
                 .andExpect(status().isCreated())
                 .andExpect(header().string("location", "/users/1004"));
 
-        verify(userService).registerUser(eq("tester@example.com"), eq("Tester"), eq("test"));
+        verify(userService).registerUser(eq("tester@example.com"), eq("Mj"), eq("test"));
 
 
     }
