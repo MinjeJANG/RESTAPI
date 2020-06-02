@@ -1,9 +1,8 @@
 package mj.project.eatgo.interfaces;
 
 import mj.project.eatgo.application.ReviewSerivce;
-import mj.project.eatgo.domain.Review;
+import mj.project.eatgo.application.UserService;
 import mj.project.eatgo.domain.User;
-import mj.project.eatgo.interfaces.ReviewController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
