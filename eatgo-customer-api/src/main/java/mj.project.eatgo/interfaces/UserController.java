@@ -22,20 +22,14 @@ public class UserController {
             @RequestBody User resource
     ) throws URISyntaxException {
         String email = resource.getEmail();
-        String name= resource.getName();
+        String name = resource.getName();
         String password = resource.getPassword();
-
-//        User user = User.builder()
-//                      .id(1004L)
-//                      .email(email)
-//                      .name(name)
-//                      .password(password).build();
 
         User user = userService.registerUser(email, name, password);
 
         String url = "/users/" + user.getId();
-
         return ResponseEntity.created(new URI(url)).body("{}");
+
     }
 
 }
