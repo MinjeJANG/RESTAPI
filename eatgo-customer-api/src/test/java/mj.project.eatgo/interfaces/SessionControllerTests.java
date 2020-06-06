@@ -1,8 +1,8 @@
 package mj.project.eatgo.interfaces;
 
-import mj.project.eatgo.application.ReviewSerivce;
+import mj.project.eatgo.application.EmailNotExistedException;
+import mj.project.eatgo.application.PasswordWrongException;
 import mj.project.eatgo.application.UserService;
-import mj.project.eatgo.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,18 +30,44 @@ public class SessionControllerTests {
     private UserService userService;
 
     @Test
-    public void create() throws Exception {
+    public void createWithValidAttributes() throws Exception {
 
-        mvc.perform(post("/users")
+        mvc.perform(post("/session")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"tester@example.com\", \"name\":\"Mj\",\"password\":\"test\"}"))
+                .content("{\"email\":\"tester@example.com\", \"password\":\"test\"}"))
                 .andExpect(status().isCreated())
                 .andExpect(header().string("location", "/session"))
                 .andExpect(content().string("{\"accessToken\":\"ACCESSTOKEN\"}"));
 
-        verify(userService).registerUser(eq("tester@example.com"), eq("Mj"), eq("test"));
+        verify(userService).authenticate(eq("tester@example.com"), eq("test"));
+    }
 
+    @Test
+    public void createWithNotExistedEmail() throws Exception {
 
+        given(userService.authenticate("x@example.com", "test"))
+                .willThrow(EmailNotExistedException.class);
+
+        mvc.perform(post("/session")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"x@example.com\", \"password\":\"test\"}"))
+                .andExpect(status().isBadRequest());
+
+        verify(userService).authenticate(eq("x@example.com"), eq("test"));
+    }
+
+    @Test
+    public void createWithNotExistedPassword() throws Exception {
+
+        given(userService.authenticate("tester@example.com", "x"))
+                .willThrow(PasswordWrongException.class);
+
+        mvc.perform(post("/session")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"email\":\"tester@example.com\", \"password\":\"x\"}"))
+                .andExpect(status().isBadRequest());
+
+        verify(userService).authenticate(eq("tester@example.com"), eq("x"));
     }
 
 }
