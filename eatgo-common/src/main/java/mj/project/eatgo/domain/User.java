@@ -1,4 +1,6 @@
 package mj.project.eatgo.domain;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -53,5 +55,13 @@ public class User {
 
     public boolean isRestaurantOwner() {
         return level == 50L;
+    }
+
+    @JsonIgnore
+    public String getAccessToken() {
+        if (password == null) {
+            return "";
+        }
+        return password.substring(0, 10);
     }
 }
