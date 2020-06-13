@@ -1,6 +1,5 @@
 package mj.project.eatgo;
 
-import com.sun.tracing.ProbeName;
 import mj.project.eatgo.utils.JwtUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -25,19 +25,20 @@ public class SessionController {
     public ResponseEntity<SessionResponseDto> create(
             @RequestBody SessionRequestDto resource
     ) throws URISyntaxException {
-
         String email = resource.getEmail();
         String password = resource.getPassword();
 
         User user = userService.authenticate(email, password);
 
-        String accessToken = user.getAccessToken();
-        String url = "/session";
+        String accessToken = jwtUtil.createToken(
+                user.getId(),
+                user.getName());
 
-        return ResponseEntity.created(new URI(url))
-                .body(SessionResponseDto.builder()
-                                .accessToken(accessToken)
-                                .build());
+        String url = "/session";
+        return ResponseEntity.created(new URI(url)).body(
+                SessionResponseDto.builder()
+                        .accessToken(accessToken)
+                        .build());
     }
 
 
