@@ -4,13 +4,17 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 
+import javax.crypto.SecretKey;
 import java.security.Key;
 
 public class JwtUtil {
-    public String createToken(long userId, String name) {
+    private Key key;
 
-        String secret = "12345678901234567890123456789012";
-        Key key = Keys.hmacShaKeyFor(secret.getBytes());
+    public JwtUtil(String secret) {
+        this.key = Keys.hmacShaKeyFor(secret.getBytes());
+    }
+
+    public String createToken(long userId, String name) {
 
         String token = Jwts.builder()
                 .claim("userId", userId)
@@ -18,7 +22,6 @@ public class JwtUtil {
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
 
-        System.out.println(">>>>>token" + token);
         return token;
     }
 }
