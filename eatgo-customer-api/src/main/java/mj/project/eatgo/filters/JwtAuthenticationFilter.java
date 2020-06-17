@@ -1,8 +1,13 @@
 package mj.project.eatgo.filters;
 
+import io.jsonwebtoken.Claims;
 import mj.project.eatgo.utils.JwtUtil;
+import org.apache.tomcat.util.http.parser.Authorization;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -25,7 +30,8 @@ public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
 
         Authentication authentication = getAuthentication(request);
         if (authentication != null) {
-
+            SecurityContext context = SecurityContextHolder.getContext();
+            context.setAuthentication(authentication);
         }
         chain.doFilter(request, response);
     }
@@ -35,6 +41,11 @@ public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
         if (token == null) {
             return null;
         }
-        return null;
+
+        Claims claims = jwtUtil.getClaims(token.substring("bearer ".length()));
+
+        Authentication authentication =
+                new UsernamePasswordAuthenticationToken(claims, null);
+        return authentication;
     }
 }
