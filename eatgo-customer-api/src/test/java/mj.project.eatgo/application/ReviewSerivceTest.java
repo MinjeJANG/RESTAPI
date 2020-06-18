@@ -34,7 +34,7 @@ public class ReviewSerivceTest {
                 .description("mat-tang")
                 .build();
 
-        reviewSerivce.addReview(1004L, review);
+        reviewSerivce.addReview(1004L, "JOKER", 3, "mat-tang");
 
         verify(reviewRepository).save(any());
 

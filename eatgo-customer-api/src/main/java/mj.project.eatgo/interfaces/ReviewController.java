@@ -23,8 +23,11 @@ public class ReviewController {
     public ResponseEntity<?> create(
             @PathVariable("restaurantId") Long restaurantId,
             @Valid @RequestBody Review resource) throws URISyntaxException {
+        String name = "John";
+        Integer score = resource.getScore();
+        String description = resource.getDescription();
 
-        Review review = reviewService.addReview(restaurantId, resource);
+        Review review = reviewService.addReview(restaurantId, name, score, description);
         String url = "/restaurants/" + restaurantId + "/reviews/" + review.getId();
         return ResponseEntity.created(new URI(url))
                 .body("{}");
