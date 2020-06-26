@@ -28,6 +28,7 @@ public class UserController {
     @RequestBody User resource
     ) throws URISyntaxException {
 
+
         String email = resource.getEmail();
         String name = resource.getName();
 

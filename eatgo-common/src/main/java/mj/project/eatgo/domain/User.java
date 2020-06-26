@@ -32,9 +32,9 @@ public class User {
     @NotNull
     private Long level;
 
-    private String password;
-
     private Long restaurantId;
+
+    private String password;
 
     public boolean isAdmin() {
         return level >= 100;

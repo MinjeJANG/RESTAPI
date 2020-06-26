@@ -1,7 +1,6 @@
 package mj.project.eatgo.utils;
 
 import io.jsonwebtoken.Claims;
-import jdk.nashorn.internal.parser.Token;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,13 +20,15 @@ public class JwtUtilTests {
     }
     @Test
     public void createToken() {
-        String token = jwtUtil.createToken(1004L, "John");
+        String token = jwtUtil.createToken(1004L, "John", null);
 
         assertThat(token, containsString("."));
     }
 
     @Test
     public void getClaims() {
+
+
         String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEwMDQsIm5hbWUiOiJKb2huIn0.8hm6ZOJykSINHxL-rf0yV882fApL3hyQ9-WGlJUyo2A";
         Claims claims = jwtUtil.getClaims(token);
 
