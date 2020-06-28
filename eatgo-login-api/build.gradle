@@ -23,14 +23,12 @@ repositories {
 }
 
 dependencies {
+    implementation project(':eatgo-common')
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'com.h2database:h2'
-
-    implementation 'io.jsonwebtoken:jjwt-api:0.10.7'
-
-    runtime 'io.jsonwebtoken:jjwt-impl:0.10.7'
-    runtime 'io.jsonwebtoken:jjwt-jackson:0.10.7'
 
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -43,12 +41,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-jar {
-    enabled = true
-}
-
-bootJar {
-    enabled = false
 }
